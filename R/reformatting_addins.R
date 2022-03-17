@@ -9,7 +9,7 @@
 #'
 wide_to_long = function(){
   doc_context=rstudioapi::getActiveDocumentContext()
-  text=answer$selection[[1]]$text
+  text=doc_context$selection[[1]]$text
   text = gsub(x=text, pattern = ",", replacement = ',\n', fixed = TRUE)
   text = sub(x=text, pattern = "(", replacement = '(\n', fixed = TRUE)
   text = sub(x=text, pattern = ")", replacement = '\n)', fixed = TRUE)
