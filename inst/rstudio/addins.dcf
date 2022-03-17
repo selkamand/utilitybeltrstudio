@@ -1,5 +1,5 @@
 Name: wide_to_long
 Description: Convert text in form of c("bob", "billy", "jeff") to c(\n"bob",\n"billy",\n"jeff"\n)
-Binding: reformatAddin
+Binding: wide_to_long
 Interactive: false
 
